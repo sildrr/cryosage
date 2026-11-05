@@ -1,0 +1,11 @@
+{
+  "cryosift_threshold": 3.0,
+  "min_particles": 2000,
+  "min_groups": 3,
+  "min_group_fraction": 0.05,
+  "duplicate_ncc": 0.85,
+  "image_size": 64,
+  "rotation_step_degrees": 15,
+  "max_shift_fraction": 0.1,
+  "compare_mirrors": true
+}

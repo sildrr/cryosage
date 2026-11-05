@@ -1,0 +1,138 @@
+{
+  "version": "reviewed-supplements-20261016",
+  "source_sha256": "74e80e1bc810243c7d2f237093cbe7fe4e08f3789562d759aa64c57d38d2a914",
+  "cards": [
+    {
+      "card_id": "D01",
+      "stage": "import_movies",
+      "advice": [
+        "If movie sampling is uncertain, check the acquisition metadata, input format, and super-resolution status to establish which sampling units the import pixel size describes rather than inferring it from the file extension alone.",
+        "If motion correction downsampled the movies, compare the input movie and output micrograph pixel sizes with their units and sampling basis before interpreting downstream dimensions."
+      ]
+    },
+    {
+      "card_id": "D02",
+      "stage": "patch_motion_correction",
+      "advice": [
+        "If motion plots are available, compare neighboring patch vector directions and magnitudes and inspect trajectory smoothness and continuity for evidence of unusual local motion.",
+        "If displacement appears unusual, identify the displacement metric, units, and affected region or exposure before interpreting it as a data-quality concern; an isolated vector pattern does not establish irreversible damage.",
+        "If a finer patch fit is being considered within the available candidates, weigh the available local signal and possible fitting noise rather than assuming finer fitting is always better."
+      ]
+    },
+    {
+      "card_id": "D03",
+      "stage": "ctf_estimation",
+      "advice": [
+        "If exposures are incomplete, inspect the available Event Log failure evidence before attributing the problem to specimen quality.",
+        "If a defocus landscape or astigmatism estimate appears abnormal, compare the corresponding CTF fit plots and reported fit metrics to distinguish plausible spatial variation from unreliable fitting; heatmap color alone is insufficient evidence.",
+        "If CTF fit resolution is used as quality evidence, interpret it as a fit-quality estimate rather than a hard limit on reconstruction resolution."
+      ]
+    },
+    {
+      "card_id": "S01",
+      "stage": "ctf_method_selection",
+      "advice": [
+        "If CTF estimates appear unstable, inspect the available fit curves, Thon-ring agreement, and defocus distributions before concluding that the estimation method is unsuitable.",
+        "If results from both candidate CTF methods are already available, compare their fitting evidence and downstream class-average edge sharpness and internal structural features rather than selecting solely by a reported fit-resolution value."
+      ]
+    },
+    {
+      "card_id": "S02",
+      "stage": "particle_picking",
+      "advice": [
+        "If particles visibly appear ring-shaped or hollow and a Blob Picker configuration is an available candidate, consider whether its ring-blob option matches that observed morphology.",
+        "If picking counts seem unusually high or low, inspect the available micrograph overlays, spatial distribution, and picking statistics for false positives or missed particles rather than diagnosing threshold direction from counts alone.",
+        "If Topaz is an available candidate and curated training coordinates exist, assess whether their orientation coverage is representative before interpreting Topaz as a suitable option for low-contrast or uneven-background data."
+      ]
+    },
+    {
+      "card_id": "D04",
+      "stage": "extract_from_micrographs",
+      "advice": [
+        "If extraction dimensions are being evaluated, check particle diameter, pixel size, and box dimensions on a consistent sampling basis and inspect whether particle edges are truncated.",
+        "If extraction resource cost is a concern, distinguish pixel dimensions from physical dimensions and consider the observed particle coverage alongside memory and storage evidence without treating a resource concern as evidence for a particular box setting."
+      ]
+    },
+    {
+      "card_id": "D05",
+      "stage": "2d_classification",
+      "advice": [
+        "If class averages are available, assess recognizable particle shape, edge sharpness, internal features, and orientation diversity together with particle counts; a sparsely populated class may represent a useful view and is not automatically junk.",
+        "If class averages are broadly blurred, examine the available class images, counts, orientation coverage, and upstream picking evidence before attributing the blur to a particular cause or proposing a candidate adjustment.",
+        "If the class partition appears too fragmented or appears to mix distinct views, compare image quality and orientation coverage before interpreting class count as an explanation."
+      ]
+    },
+    {
+      "card_id": "D06",
+      "stage": "ab_initio_reconstruction",
+      "advice": [
+        "If initial volumes appear flattened or differ substantially, compare their shapes with class-average quality and orientation coverage while keeping orientation bias, residual false positives, and genuine heterogeneity as distinct hypotheses.",
+        "If multiple initial volumes are available, examine whether their differences are structurally interpretable before labeling differing volumes as failed reconstructions."
+      ]
+    },
+    {
+      "card_id": "D07",
+      "stage": "heterogeneous_refinement",
+      "advice": [
+        "If heterogeneous classes differ in density quality, compare structural coherence and available class evidence to distinguish damaged or noisy particles from plausible biological states; lower clarity alone does not establish that a class is junk.",
+        "If combining or selecting class subsets is an available candidate, consider whether the observed class differences support that choice rather than assuming all classes are interchangeable."
+      ]
+    },
+    {
+      "card_id": "D08",
+      "stage": "homogeneous_refinement",
+      "advice": [
+        "If refinement results are available, inspect the reported gold-standard FSC curve behavior together with map completeness and structural coherence at reasonable display contours rather than relying on a resolution number alone.",
+        "If directional resolution evidence is available, consider whether anisotropy limits interpretation of apparent map detail."
+      ]
+    },
+    {
+      "card_id": "D09",
+      "stage": "non_uniform_refinement",
+      "advice": [
+        "If a mask overlay is available, inspect whether it truncates peripheral density or flexible regions, especially when apparent FSC improvement accompanies a tighter mask.",
+        "If core and peripheral local resolution differ, qualify structural interpretation by the local evidence rather than extending core detail to poorly resolved regions.",
+        "If memory pressure is reported, check box dimensions, their sampling units, and actual device-memory evidence before assessing an available low-memory option; source hardware examples are not transferable presets."
+      ]
+    },
+    {
+      "card_id": "D10",
+      "stage": "local_refinement",
+      "advice": [
+        "If local refinement results are available, compare focused-region resolution evidence with the global result and inspect the mask transition and surrounding density for artifacts.",
+        "If abnormal protrusions, voids, or mask-boundary features appear, treat overfitting or focused-setting problems as hypotheses to check against the available maps rather than as established diagnoses."
+      ]
+    },
+    {
+      "card_id": "D11",
+      "stage": "local_ctf_refinement",
+      "advice": [
+        "If Local CTF Refinement is an available candidate, assess the available upstream refined map, pose estimates, and half-map FSC evidence for whether the proposed fitting range has usable signal rather than applying a universal fitting-resolution threshold."
+      ]
+    },
+    {
+      "card_id": "D12",
+      "stage": "3d_variability_analysis",
+      "advice": [
+        "If variability-analysis results are available, inspect mode visualizations, associated volumes, and particle-coordinate evidence for plausible conformational changes; a dominant component alone does not establish discrete biological states."
+      ]
+    },
+    {
+      "card_id": "R01",
+      "stage": "particle_overlap_and_extra_density",
+      "advice": [
+        "If neighboring-particle interference or extra map density is observed, compare the available micrographs, picking overlays, and class averages before attributing the extra density to particle overlap or sample concentration.",
+        "If an existing picking or class-selection candidate is being evaluated for confirmed overlap, assess whether the template or selected classes contain neighboring-particle signal and consider the possible loss of valid particles without assigning a new recovery priority."
+      ]
+    },
+    {
+      "card_id": "Q01",
+      "stage": "fsc_mask_interpretation",
+      "advice": [
+        "If half-map FSC curves with different masks are available, compare the unmasked, loose, tight, and corrected results alongside the mask evidence rather than treating the tight-mask resolution as independently reliable.",
+        "If tight-mask FSC appears substantially better than corrected or loose-mask FSC, inspect possible mask-induced correlation and qualify the apparent improvement using the corrected evidence.",
+        "If tight and corrected curves agree, regard that agreement as evidence consistent with limited mask bias, not proof of map correctness or a universal ordering of all FSC curves."
+      ]
+    }
+  ]
+}

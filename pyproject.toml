@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryosage-web"
+version = "2026.11.5"
+description = "Knowledge-guided cryo-EM processing Agent and private Slurm web console"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "mcp>=1.27,<2", "cryosparc-tools>=5.0,<6", "pydantic>=2.13,<3",
+  "numpy>=2.0,<3", "Pillow>=12,<14", "scipy>=1.14,<2",
+  "matplotlib>=3.9,<4", "mrcfile>=1.5,<2", "tifffile>=2024.1",
+  "requests>=2.32,<3",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+cryosage-web = "cryosage.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cryosage*", "webapp*", "cryosparc_agent*", "scripts*", "benchmarks*", "cryosparc_result_agent*", "deploy*"]
+exclude = ["*.tests", "*.tests.*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+webapp = ["controller.sbatch", "static/*.html", "static/*.css", "static/*.js", "static/showcase/*.png", "static/showcase/*.json"]
+cryosparc_agent = ["guidance/*.json"]
+deploy = ["*.example"]
+
+[tool.pytest.ini_options]
+testpaths = ["release_tests"]

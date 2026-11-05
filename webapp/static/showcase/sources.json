@@ -1,0 +1,78 @@
+[
+  {
+    "dataset_id": "10025",
+    "project": "P6",
+    "workspace": "W21",
+    "job": "J370",
+    "fsc_job": "J370",
+    "fsc_asset": {
+      "asset_id": "6ab0c1177e425873689d2169",
+      "extension": "png",
+      "caption": "FSC Iteration 005, after FSC-mask auto-tightening",
+      "created_at": "2026-09-21T05:31:03.741000Z",
+      "source": "CryoSPARC event log"
+    },
+    "map_field": "map_sharp/path",
+    "map_source": "J370/J370_005_volume_map_sharp.mrc",
+    "map_cache": "/hdd1/linweifan/cryosparc/cryoagent_web/diagnostics/showcase_final_maps/P6_J370.mrc",
+    "preview": "Single oblique isosurface; see rendering.json for display settings. Not structural validation.",
+    "curve_source": "10025-curves.json"
+  },
+  {
+    "dataset_id": "11280",
+    "project": "P6",
+    "workspace": "W8",
+    "job": "J117",
+    "fsc_job": "J118",
+    "fsc_asset": {
+      "asset_id": "6aa00987417db3a7e8f42ee3",
+      "extension": "png",
+      "caption": "Gold Standard FSC, with markers, large",
+      "created_at": "2026-09-08T13:11:35.363000Z",
+      "source": "CryoSPARC event log"
+    },
+    "map_field": "map_sharp/path",
+    "map_source": "J117/J117_009_volume_map_sharp.mrc",
+    "map_cache": "/hdd1/linweifan/cryosparc/cryoagent_web/diagnostics/showcase_final_maps/P6_J117.mrc",
+    "preview": "Single oblique isosurface; see rendering.json for display settings. Not structural validation.",
+    "curve_source": "11280-curves.json"
+  },
+  {
+    "dataset_id": "10208",
+    "project": "P18",
+    "workspace": "W12",
+    "job": "J282",
+    "fsc_job": "J282",
+    "fsc_asset": {
+      "asset_id": "6acbe5ec022025a6c31eba31",
+      "extension": "png",
+      "caption": "FSC Iteration 007, after FSC-mask auto-tightening",
+      "created_at": "2026-10-11T19:39:24.293000Z",
+      "source": "CryoSPARC event log"
+    },
+    "map_field": "map_sharp/path",
+    "map_source": "J282/J282_007_volume_map_sharp.mrc",
+    "map_cache": "/hdd1/linweifan/cryosparc/cryoagent_web/diagnostics/showcase_final_maps/P18_J282.mrc",
+    "preview": "Single oblique isosurface; see rendering.json for display settings. Not structural validation.",
+    "curve_source": "10208-curves.json"
+  },
+  {
+    "dataset_id": "10012",
+    "project": "P18",
+    "workspace": "W13",
+    "job": "J306",
+    "fsc_job": "J306",
+    "fsc_asset": {
+      "asset_id": "6acc7914801aa0743f1097af",
+      "extension": "png",
+      "caption": "FSC Iteration 005, after FSC-mask auto-tightening",
+      "created_at": "2026-10-12T06:07:16.598000Z",
+      "source": "CryoSPARC event log"
+    },
+    "map_field": "map_sharp/path",
+    "map_source": "J306/J306_005_volume_map_sharp.mrc",
+    "map_cache": "/hdd1/linweifan/cryosparc/cryoagent_web/diagnostics/showcase_final_maps/P18_J306.mrc",
+    "preview": "Single oblique isosurface; see rendering.json for display settings. Not structural validation.",
+    "curve_source": "10012-curves.json"
+  }
+]

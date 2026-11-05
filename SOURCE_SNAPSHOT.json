@@ -1,0 +1,1009 @@
+{
+  "version": "2026.11.5",
+  "source_date": "2026-11-05",
+  "excluded": [
+    "credentials",
+    "environments",
+    "weights",
+    "KB databases",
+    "datasets",
+    "live logs",
+    "task records",
+    "experiment controllers",
+    "third-party source trees"
+  ],
+  "files": {
+    "benchmarks/agent_vs_codex_20261017/kb_server.py": {
+      "sha256": "0a50f59968972bd65c681b6a9d7bb01830df9dc16b220f01f5a9accacf43d5a6",
+      "bytes": 3581
+    },
+    "cryosparc_agent/abinitio_class2d_consistency.py": {
+      "sha256": "ce1011790c94c124e0cbc49bd32ad6354ca66ddd55eca38d491ef0ceae493a28",
+      "bytes": 19909
+    },
+    "cryosparc_agent/action_registry.py": {
+      "sha256": "6b90242ff11182497e92a980ac99ac5676c6f95164c02c7fe45766229b42f7ad",
+      "bytes": 151481
+    },
+    "cryosparc_agent/analyze_visual_rl_400_results.py": {
+      "sha256": "a9f31411b4804e8bf41510e12e9c646444e85027d213ad1ab1880b385d540bc7",
+      "bytes": 7540
+    },
+    "cryosparc_agent/api_failover.py": {
+      "sha256": "c6f51d15cb33e32cdd04d160c078b989d29d88f34e41cc2dc8cd8fc8e7709edc",
+      "bytes": 2280
+    },
+    "cryosparc_agent/api_payload_budget.py": {
+      "sha256": "e4dfc6796bb11a4ac7fae0a3602fd1efb46432e6721603bb6ec5379ed8c0cfe9",
+      "bytes": 4363
+    },
+    "cryosparc_agent/api_responses_adapter.py": {
+      "sha256": "a148130ac1cd3ce507a5b1ab3e8b72efc9c8fded7ca26de8abaff989393b7688",
+      "bytes": 4601
+    },
+    "cryosparc_agent/autonomous_mcp_closed_loop.py": {
+      "sha256": "070c77de0742ab59c5f186dda2810a04ed9f98fadee25863f09e8154be6960a8",
+      "bytes": 140125
+    },
+    "cryosparc_agent/benchmark_budget.py": {
+      "sha256": "598287644620f371afb8cb29fa8dfd96499c8bba5883b9716f291ce39d978b24",
+      "bytes": 3845
+    },
+    "cryosparc_agent/class2d_scale.py": {
+      "sha256": "406cdf2ef2ebd2e7c25fa907c9be1ab81192825b78ab38581480c3c7ee85dd6f",
+      "bytes": 16921
+    },
+    "cryosparc_agent/coverage_context.py": {
+      "sha256": "97b5256f1bb1728398ea255c01d8810601bf5acc0efeca8764dd1558871cf2c4",
+      "bytes": 476
+    },
+    "cryosparc_agent/coverage_rollout.py": {
+      "sha256": "cbb0910a5c6c83e28d9a29579e720ae80c5d35531310b51e27cc17ee7922cd6b",
+      "bytes": 30888
+    },
+    "cryosparc_agent/cryolo_initial_scale.py": {
+      "sha256": "d9d1dea1fdbdf21bb1310f0e2ff39602fc4fb539d3eac1258be864e41100d90f",
+      "bytes": 7039
+    },
+    "cryosparc_agent/cryosift_adapter.py": {
+      "sha256": "5b81be84592df4c4ba77c73d10d97623b3c63c84ab345e44d6f2568a531e1ea4",
+      "bytes": 8377
+    },
+    "cryosparc_agent/cryosparc_cli_tools.py": {
+      "sha256": "7e1405a698182b3e48c57ae749a706879e3677cf419c64087819f620dd2aa480",
+      "bytes": 4787
+    },
+    "cryosparc_agent/cryosparc_client.py": {
+      "sha256": "86399ba8ca534cf52aba77da00a546469e9078c0813c0d1cc0c4d2e52425e253",
+      "bytes": 2785
+    },
+    "cryosparc_agent/cryosparc_mcp_server.py": {
+      "sha256": "2face8db0f3f0a06882a614f23d2eda2b4ac326e7d82cc2c46231529b49c969f",
+      "bytes": 25495
+    },
+    "cryosparc_agent/dataset_info.py": {
+      "sha256": "806ea16bfaf615c8a5cdf43cb01cbee29c4ac143c40cb1196a154cbfd7fafef9",
+      "bytes": 1279
+    },
+    "cryosparc_agent/dataset_xml.py": {
+      "sha256": "be48af9649580fbd2ec1f4978552e97f597bd0727153eefb025e38dda9dfa05f",
+      "bytes": 2042
+    },
+    "cryosparc_agent/diameter_trial.py": {
+      "sha256": "45bc30b3a7f2c45ebab29f5c6840e306c61a0eb7144af8dc9d43d5c10b58ef31",
+      "bytes": 15171
+    },
+    "cryosparc_agent/download_visual_rl_official_samples.py": {
+      "sha256": "d8aa906a5880da379298e0ae0a5b4baecf0488677bb0f87117d62ed211b1099b",
+      "bytes": 9251
+    },
+    "cryosparc_agent/dynamic_candidates.py": {
+      "sha256": "37dbad5c18d626445d05e0e21f87a0cdfa4961d32d48371b5cf8fef8b0a635e9",
+      "bytes": 15767
+    },
+    "cryosparc_agent/experiment_planner.py": {
+      "sha256": "8dc5c0c5c9107b8908c4346e483d2857228b43a3bfb9f507a28c84d2235b90af",
+      "bytes": 25458
+    },
+    "cryosparc_agent/extract_review.py": {
+      "sha256": "9bedffc66afa6a6ebdebd266d5674272299a8fe80e1f5f1abf234a6e308d5cc6",
+      "bytes": 10904
+    },
+    "cryosparc_agent/extract_review_evidence.py": {
+      "sha256": "5b86a562b773b9b237af5da37d5312f305e5accf606cf563afd85fa82d22875a",
+      "bytes": 10179
+    },
+    "cryosparc_agent/extract_scale_context.py": {
+      "sha256": "fc5e6f88cf2896d7b146e3eb889ea5893de533a6b827cb8f3007d75f2bfe3fb8",
+      "bytes": 7388
+    },
+    "cryosparc_agent/fresh_coverage_rollout.py": {
+      "sha256": "35b5827d71534ad966029143954214032a51b6d5d18cf5ba435b39d1dc9a40ac",
+      "bytes": 21458
+    },
+    "cryosparc_agent/guidance/pilot_objective_gate_v2.json": {
+      "sha256": "484963f94808fd57700bae5159632e4213494aaf911acb2e2857972a69ebc6fb",
+      "bytes": 238
+    },
+    "cryosparc_agent/guidance/reviewed_stage_guidance.json": {
+      "sha256": "ce6a85f5e9390cd499f98f2791c2b8f752d8f13072dd06ee1bea91725e4cad89",
+      "bytes": 9547
+    },
+    "cryosparc_agent/inspect_review.py": {
+      "sha256": "0102f0adb995c506d53330522c9e8a096cd445669151fb35fc1fe5dfa402097b",
+      "bytes": 11439
+    },
+    "cryosparc_agent/inspect_score_contract.py": {
+      "sha256": "b4cfed20d1e8a8ee6bdd4517498b4054a02ed3d365ff1b6cd7b6023c66b7d7b6",
+      "bytes": 2874
+    },
+    "cryosparc_agent/job_executor.py": {
+      "sha256": "b75254a2c83f9871642c3d97c0ee873d3c37d8274234e1b59eaf6cff4b376ba4",
+      "bytes": 19377
+    },
+    "cryosparc_agent/job_input_contracts.py": {
+      "sha256": "c0eb4d1d022c914032d330fd71ac5a41cb13ca71796ab1c165ae222e4af54026",
+      "bytes": 2082
+    },
+    "cryosparc_agent/job_result.py": {
+      "sha256": "19aabefd8d50d6bc19459f49d27ecbd8912d8f59644eb92cdc869a5137692e77",
+      "bytes": 17063
+    },
+    "cryosparc_agent/job_specs.py": {
+      "sha256": "2087783c0241f39611ab1620db4c9f8230466ab01e01da7cfae5e6a5f3e56c2c",
+      "bytes": 13681
+    },
+    "cryosparc_agent/kb_bridge.py": {
+      "sha256": "9710156febed964da96e06c22dfe30b3c43b341472a81acc5df84bf43ccb8ef3",
+      "bytes": 4783
+    },
+    "cryosparc_agent/kb_tool_loop.py": {
+      "sha256": "202bb5f091ad49c4eaedfa9edc386ed5a6b3bb2e19af3f567b7ce7fd3ef96b44",
+      "bytes": 6496
+    },
+    "cryosparc_agent/known_workflow_retriever.py": {
+      "sha256": "1cccf1bd5e666e9a2ff429dbb5234626b96f6d6c2a133101b87c15bf1fe995c1",
+      "bytes": 7158
+    },
+    "cryosparc_agent/model_direct_runner.py": {
+      "sha256": "90b1d8f9ee4be7da18ea59d2aa6959964915aec6568c25c3ad8d8ab00488334a",
+      "bytes": 26288
+    },
+    "cryosparc_agent/model_input_builder.py": {
+      "sha256": "63cd6fdb56d0145fb6bfd5e4fe8d1a6f10897a2837008c2a20f04fcfb159f4eb",
+      "bytes": 12190
+    },
+    "cryosparc_agent/movie_metadata.py": {
+      "sha256": "914e35e9a28ddf03255ae52a0b9be85242511a5a43528d941b3d7726226039da",
+      "bytes": 2010
+    },
+    "cryosparc_agent/operator_control.py": {
+      "sha256": "ba508f1a43a1e1a91f7da5c7cc8f45881dc93d35fa9c17de05d06d428b600a84",
+      "bytes": 3288
+    },
+    "cryosparc_agent/picker_blob_recovery.py": {
+      "sha256": "f261f0b1986a66ec5e42e84393ead1fff6628e730988e965f2e8b587977dac80",
+      "bytes": 13320
+    },
+    "cryosparc_agent/picker_gate_repeat.py": {
+      "sha256": "14b345f5d964b4b51c0f4789e0cf30e1ff636aab244734a4b468188bc16f57d0",
+      "bytes": 1476
+    },
+    "cryosparc_agent/pilot_inspect_comparison.py": {
+      "sha256": "c4ed71516663b4cf65033e657ab7f8e6ed69266c37f9209cc9f9a9a043d821f7",
+      "bytes": 12323
+    },
+    "cryosparc_agent/pilot_objective_gate.py": {
+      "sha256": "b5762409a61d6722e1bd8939468c1bf370f4f9528af9a67402b17683468b2e57",
+      "bytes": 10313
+    },
+    "cryosparc_agent/pilot_promotion.py": {
+      "sha256": "ec6f4c222f696004d3bcd477714c1a4b4932bced92d472e4dbe847eee76ff261",
+      "bytes": 19016
+    },
+    "cryosparc_agent/pilot_reclassification_experiment.py": {
+      "sha256": "5b6e94e59a5b7024a3ac0560748d2bbed778b19e394bdb8736cedfc3bb3cb469",
+      "bytes": 26327
+    },
+    "cryosparc_agent/pilot_reclassification_v2.py": {
+      "sha256": "3e8662f5c78aa1fc9d9fb930fb2e4612b16c1b4f125a87df7032af3b499dd34b",
+      "bytes": 20503
+    },
+    "cryosparc_agent/prepare_visual_rl_100_collection.py": {
+      "sha256": "959b9ce01e1dde3ed34f11ebdf8b37e55d5a68833659eeefdf984d5f750840f8",
+      "bytes": 7940
+    },
+    "cryosparc_agent/prepare_visual_rl_batch.py": {
+      "sha256": "a7a050c16f1ed0caa6d9637753d5ded55d423738196c5565b8bb0777fdd7bea0",
+      "bytes": 31189
+    },
+    "cryosparc_agent/prepare_visual_rl_ctf_batch.py": {
+      "sha256": "9006c5606e95c9e104a09622ba077d8f3c5dccc1f7c8b602efd4f99a3d528bd6",
+      "bytes": 9959
+    },
+    "cryosparc_agent/prepare_visual_rl_exploration.py": {
+      "sha256": "7a193755003af94d092472629dcf196858de08c380c17de953bef443c6a734ff",
+      "bytes": 2879
+    },
+    "cryosparc_agent/prompt_context.py": {
+      "sha256": "0aabc1cd4b1a3b3bfd06128cc23facb12a7e568b1e311c752663e3fe8b720f52",
+      "bytes": 4927
+    },
+    "cryosparc_agent/proshade_adapter.py": {
+      "sha256": "fc3b536b212157f98fc142eb8b95a009ecf8e56941f7a0366c8cbaf849b21c6b",
+      "bytes": 9169
+    },
+    "cryosparc_agent/quality_policy.py": {
+      "sha256": "aeb9d160a20dedeeb72c432f0f8189ade5761e056988459ac5a3723518d0e834",
+      "bytes": 8420
+    },
+    "cryosparc_agent/reconstruction_observer.py": {
+      "sha256": "9d2f217457e32684859b9527d156da849e8bddeaec8f3aa659e83d121163a865",
+      "bytes": 18451
+    },
+    "cryosparc_agent/reconstruction_planner_pilot.py": {
+      "sha256": "003eb91e1251cf31e33f9da2693c94eca98bda29a62d1a1aa974ee809a3f17a4",
+      "bytes": 8594
+    },
+    "cryosparc_agent/recover_class2d_box_compare.py": {
+      "sha256": "f2251224a92fa82606433ba5cba1566d6f9aa9d72404c867678c54031733d2c7",
+      "bytes": 10263
+    },
+    "cryosparc_agent/reference_projection_metrics.py": {
+      "sha256": "c8bfb035a815be1a159738896654bfc71e6706998cc2590ef8c33df17e4f0b66",
+      "bytes": 14621
+    },
+    "cryosparc_agent/refinement_optimization.py": {
+      "sha256": "82c7e111b150d4bd6ef721dd76f4706d63c8a4d5ebcc39b34832cbcf54ac1049",
+      "bytes": 17080
+    },
+    "cryosparc_agent/resource_strategy.py": {
+      "sha256": "7bae62c7daa16ef272f70a6858656dc63d76d775ef00cfecdd01d9c360da5e94",
+      "bytes": 6427
+    },
+    "cryosparc_agent/schemas.py": {
+      "sha256": "963fa44f4ba2d396a5152be673632a2c385b5388f5eb11e477d4208982e82d3e",
+      "bytes": 5944
+    },
+    "cryosparc_agent/scripts/annotate_evidence_crops.py": {
+      "sha256": "b8badc3b5755db30778da7457b8aa1773a4b19ab9bdd13a4c4c322a4cf309f94",
+      "bytes": 3435
+    },
+    "cryosparc_agent/scripts/annotate_visual_measurements.py": {
+      "sha256": "fe306e59db2a0919038ecf049b709779106ff67411af25eaa4b6072caab0f53b",
+      "bytes": 1677
+    },
+    "cryosparc_agent/scripts/autonomous_mcp_closed_loop.py": {
+      "sha256": "81f50bbab49fd41268ef62618d9d8a4b2fb0756cd938bf5ffa4b027e1de57b3f",
+      "bytes": 54435
+    },
+    "cryosparc_agent/scripts/compare_cryosparc_preview.py": {
+      "sha256": "4936cc23aa6335a6a324fd050839c0bbeaf7e49b02e1ea89e43cff38f54346fd",
+      "bytes": 2405
+    },
+    "cryosparc_agent/scripts/diagnose_micrograph_evidence.py": {
+      "sha256": "7c732727d1b348e72cf362109d64ace29385b8faa91d363fbfdbb13f80b6cc8b",
+      "bytes": 2016
+    },
+    "cryosparc_agent/scripts/extract_dataset_info_xml.py": {
+      "sha256": "f3d768ff729a81fccc20869f735269450b98e8521623b12e2635c25128c0ec68",
+      "bytes": 888
+    },
+    "cryosparc_agent/scripts/model_generate_once.py": {
+      "sha256": "953fd43e2775556ae5ca5c2726a1581114684c101031a47eafe195d2160972d7",
+      "bytes": 4290
+    },
+    "cryosparc_agent/scripts/model_generate_vision_once.py": {
+      "sha256": "89491b66688803c08823b33bfd4b848c42b874790cab6525c5337d03577e190d",
+      "bytes": 6941
+    },
+    "cryosparc_agent/scripts/observe_abinitio_class2d_consistency.py": {
+      "sha256": "41364877c12cd333ad1ba92ad14ba8701b853f04bc82dda843ea44b140871eda",
+      "bytes": 3125
+    },
+    "cryosparc_agent/scripts/prepare_map_comparison.py": {
+      "sha256": "123fa40f5d936621af65ae8c3fbfc58a856316a1610872e5793c2bf09fa03ee6",
+      "bytes": 3238
+    },
+    "cryosparc_agent/scripts/preview_full_micrograph.py": {
+      "sha256": "05bbcb91d2ab395d6bfb8bc405e4f3066b61747e5aa1ca5d40020457abea5736",
+      "bytes": 1210
+    },
+    "cryosparc_agent/scripts/probe_api_vision_tools.py": {
+      "sha256": "20863125d2bb43ff7a538bcb2d97d325d32bf9b6cbb44516e3596075734f2402",
+      "bytes": 7378
+    },
+    "cryosparc_agent/scripts/probe_box_size_from_picks.py": {
+      "sha256": "47713aa37c3d28ec2b81d37221a3fa02e8748ecc6ef14bd31b993954c3c151e2",
+      "bytes": 7171
+    },
+    "cryosparc_agent/scripts/probe_class2d_truncation.py": {
+      "sha256": "9a94db78e0217a25a84c67427a7be34087a040363ce90a1e4f9b94b3a4f20552",
+      "bytes": 5228
+    },
+    "cryosparc_agent/scripts/probe_extract_box_review.py": {
+      "sha256": "547f949c2afc0c3e2360e9e46c04bae3afaa16ee89733269fe0429ed48f982db",
+      "bytes": 11821
+    },
+    "cryosparc_agent/scripts/probe_extract_context_review.py": {
+      "sha256": "681eefb9093d03fdaed3d11a4f2e100f31c852b8f8845fd32fc3cdb10747670c",
+      "bytes": 17130
+    },
+    "cryosparc_agent/scripts/probe_full_micrograph_decision.py": {
+      "sha256": "c0cdaba2570dac8ade54dbc65d88c1b04d599054851f22868e50cb7fcb752120",
+      "bytes": 4378
+    },
+    "cryosparc_agent/scripts/smoke_create_job_from_decision_direct.py": {
+      "sha256": "dc8fc2e59bf41582582901e88a0de7fc6a5f071fe0a6283cbe85065d3e4bb73f",
+      "bytes": 7934
+    },
+    "cryosparc_agent/scripts/smoke_direct_model_decision.py": {
+      "sha256": "da4879632cdde87ed408acd7c2b442224ed4359af18933bb0215496a04d36838",
+      "bytes": 4716
+    },
+    "cryosparc_agent/scripts/smoke_execute_v2_decision_file.py": {
+      "sha256": "ec6a8ba6907246131afd32a437cfa6b296da0d1c77ef325a8e29ce213b2439f3",
+      "bytes": 3505
+    },
+    "cryosparc_agent/scripts/smoke_import_movies_live.py": {
+      "sha256": "3239b7827f1dde775302704a73c80a478e1384a81542387fc6e2e6026ce324bb",
+      "bytes": 4114
+    },
+    "cryosparc_agent/scripts/smoke_job_result_package.py": {
+      "sha256": "c0c0944ca34c8a072b38db5302268ac44cc4fc38172194dde12de51051332c20",
+      "bytes": 1446
+    },
+    "cryosparc_agent/scripts/smoke_model_closed_loop.py": {
+      "sha256": "cc446da551e93dcc6cf756dfc0c9d383acd00ec314b59c3e80f57dc9ef349eab",
+      "bytes": 9174
+    },
+    "cryosparc_agent/scripts/smoke_model_input_v2.py": {
+      "sha256": "f6a51070d2367b8f10f9f1d6da95e038deaf9bac3b228c2ff6e6c89a2714ce81",
+      "bytes": 2136
+    },
+    "cryosparc_agent/scripts/smoke_v2_decision_adapter.py": {
+      "sha256": "6377880de5cd85f683f08f3feb242fd290ee679454de373a74f557597e6b992c",
+      "bytes": 1624
+    },
+    "cryosparc_agent/selection_safety.py": {
+      "sha256": "ba539808207fa897c1d768d470784a7b813fefbb0e8e7689201b3766257eb0d3",
+      "bytes": 5464
+    },
+    "cryosparc_agent/sequential_picker_rollout.py": {
+      "sha256": "ae2deb65d00854ebb8313f0c40db7734410e2758a766bb3dc054c98d650d8965",
+      "bytes": 48962
+    },
+    "cryosparc_agent/sequential_picker_v4.py": {
+      "sha256": "1febaf4f2cdc516ca7b441cb0be4ef2753237dc1a0d0bffe3396e543ff76bbd4",
+      "bytes": 16195
+    },
+    "cryosparc_agent/stage_guidance.py": {
+      "sha256": "84c2b6db167d66ea52714dda9f5e6d5ba9b495d65e069acf7705b28ec039b168",
+      "bytes": 14493
+    },
+    "cryosparc_agent/symmetry_policy.py": {
+      "sha256": "a18ff7f88ef150d1c7853793ce726b34affa9e5d0c16324b4bcd7cdde0ac8bb4",
+      "bytes": 6027
+    },
+    "cryosparc_agent/tests/test_abinitio_class2d_consistency.py": {
+      "sha256": "ebd2ce5d95580630ba6429a5f7041b16eab23ddb963a2def8788299c5573d791",
+      "bytes": 1825
+    },
+    "cryosparc_agent/tests/test_action_registry.py": {
+      "sha256": "f2d17b699308035544b3364ac140dd815fc5510dd34c49400d137b435ee653d5",
+      "bytes": 38689
+    },
+    "cryosparc_agent/tests/test_api_failover.py": {
+      "sha256": "612e25e260dca6ade1b42cf9a655fab9fecd999e28aaef66859cd221a8da13b5",
+      "bytes": 4206
+    },
+    "cryosparc_agent/tests/test_api_payload_budget.py": {
+      "sha256": "f558d28967f2853af667525452964e178cb1fcf222cbdd52dc7b1f3da5699d64",
+      "bytes": 5755
+    },
+    "cryosparc_agent/tests/test_api_responses_adapter.py": {
+      "sha256": "898d1b364dae56d671389be280c9470c6447e94a4ec332dda599d022991af7d2",
+      "bytes": 3981
+    },
+    "cryosparc_agent/tests/test_auto_select_2d.py": {
+      "sha256": "7d682e94acf907baebb1f11e6bc116e004e20ccb0f2045551b8a8eb5b625e9e2",
+      "bytes": 1085
+    },
+    "cryosparc_agent/tests/test_autonomous_mcp_closed_loop_logs.py": {
+      "sha256": "86d2b4b432543d5d115d25c36254d5776152aab745f432d84424affe533123b0",
+      "bytes": 9510
+    },
+    "cryosparc_agent/tests/test_box_size_trial_branching.py": {
+      "sha256": "da6436c865d0c38bd2fe8a716bc51b3361b6f62c0a0f607b6538d9415fccc883",
+      "bytes": 6870
+    },
+    "cryosparc_agent/tests/test_class2d_scale.py": {
+      "sha256": "831745ed03bd928d0c51a305d1d8e0dd7fe236404186ba6944b3fa74b74215bb",
+      "bytes": 4383
+    },
+    "cryosparc_agent/tests/test_class3d_recovery.py": {
+      "sha256": "d9a1e966f5a42a8efddd31bb1def5e8515cfea86803b87a61d01668e2e990803",
+      "bytes": 6148
+    },
+    "cryosparc_agent/tests/test_comparison_map_inventory.py": {
+      "sha256": "b26c5d6a7e8afdb2ae202f623620ea95fdf646cecaa384858120373799e9ceb5",
+      "bytes": 1678
+    },
+    "cryosparc_agent/tests/test_coverage_core_context.py": {
+      "sha256": "3c2206057ca2a1f9e952a914afb8f1434c5e640ae8e5275490244f65ce2ca1e8",
+      "bytes": 1390
+    },
+    "cryosparc_agent/tests/test_coverage_rollout.py": {
+      "sha256": "dd55d52bdfa0634c2276a3901a3733d837fe4fbe5027412165ae1ea5c37b46fb",
+      "bytes": 4154
+    },
+    "cryosparc_agent/tests/test_cryolo_initial_scale.py": {
+      "sha256": "2a4f16e175880eb08a73466d823af59a4317384b61890962f4d17a853e2c79f5",
+      "bytes": 5443
+    },
+    "cryosparc_agent/tests/test_cryosift_adapter.py": {
+      "sha256": "d78ac11a0801a069cb1ed1fd7ef054259ada0ea28833075af12425138deb1388",
+      "bytes": 2084
+    },
+    "cryosparc_agent/tests/test_cryosparc_client.py": {
+      "sha256": "f16ae6b927e843c54216cdbe0372d51c344d2ebbd9ac040085ac7df1b6221c00",
+      "bytes": 920
+    },
+    "cryosparc_agent/tests/test_current_runner_completion.py": {
+      "sha256": "f436c5a42b9ac076bac369037dabf12f58579a87096102b48407894499c56b88",
+      "bytes": 8853
+    },
+    "cryosparc_agent/tests/test_dataset_info.py": {
+      "sha256": "06b37bb8ca6320ee1a99a84fab161845d67dd93736d361c71e5b6669dca4a802",
+      "bytes": 892
+    },
+    "cryosparc_agent/tests/test_dataset_xml.py": {
+      "sha256": "3b18273ca79ffcc8681891de9cdad57fc1d1475af23e1b6838d2ab809ae7a79b",
+      "bytes": 2032
+    },
+    "cryosparc_agent/tests/test_decision_preferences.py": {
+      "sha256": "e5b546daf24f836bc7a13b745930a3fe0f20769e3bdd6b10f20669907a490492",
+      "bytes": 1746
+    },
+    "cryosparc_agent/tests/test_diameter_trial.py": {
+      "sha256": "b051715833c5c69bd16da11021f69b142228f618daf2b4fb2be90e4da8a8cc08",
+      "bytes": 10743
+    },
+    "cryosparc_agent/tests/test_dynamic_candidates.py": {
+      "sha256": "e948062f952f86ae2196fd05f88dae5df2104f4d46014363a71875fdec287ac2",
+      "bytes": 12823
+    },
+    "cryosparc_agent/tests/test_execution_interface_recovery.py": {
+      "sha256": "29a61869369a0a67a761e227c40a5b8958322fb7f1908f92d4d5c367dafb28bf",
+      "bytes": 3749
+    },
+    "cryosparc_agent/tests/test_experiment_planner.py": {
+      "sha256": "63736cd12d78caba78acda81ca208ee6433de2452c6f74a90af5cf73581aa800",
+      "bytes": 9024
+    },
+    "cryosparc_agent/tests/test_extract_box_review_probe.py": {
+      "sha256": "67db72edc3271473fa3097ec24b52ab4d3f8d88f330b11a46327fb4091d1314e",
+      "bytes": 1441
+    },
+    "cryosparc_agent/tests/test_extract_context_review_probe.py": {
+      "sha256": "7e301ec19f587efb7f3dd228b10f510df9ceeda49a0247b7dc629a65bffa8ed9",
+      "bytes": 3196
+    },
+    "cryosparc_agent/tests/test_extract_review.py": {
+      "sha256": "e929c5a6b8afb36ae18583c90e1b61e5865c2cc3788c2093dd0b5b707ad07e7b",
+      "bytes": 9145
+    },
+    "cryosparc_agent/tests/test_extract_sampling_guidance.py": {
+      "sha256": "58a4d77aa661f0725a5703f560576b536fc4e91cd2f0546e05cf8f0dc2cb2ab3",
+      "bytes": 1911
+    },
+    "cryosparc_agent/tests/test_extract_scale_context.py": {
+      "sha256": "d44f66edcea82f0f117770f203c05ca1799edb987bf16ccaa67f637326f87e5f",
+      "bytes": 4683
+    },
+    "cryosparc_agent/tests/test_fresh_coverage_rollout.py": {
+      "sha256": "1caa587704787f35bc6991daddefa16032e591bda037789a993a3cf4c8c394e9",
+      "bytes": 5330
+    },
+    "cryosparc_agent/tests/test_initial_scale_calibration.py": {
+      "sha256": "23d91498983100234e2a42a5e0c3a2d8f4177604d23ea68a19d795df1c66cc57",
+      "bytes": 8724
+    },
+    "cryosparc_agent/tests/test_inspect_review.py": {
+      "sha256": "d43e599be3802943d1833e0c209e5191a8e9407349cec9cd3f3ffc65a7050e76",
+      "bytes": 5117
+    },
+    "cryosparc_agent/tests/test_inspect_score_contract.py": {
+      "sha256": "1fa5d0003c7a58740289129781fdef2c96789513f4dc295cc76f94d570fdc437",
+      "bytes": 4782
+    },
+    "cryosparc_agent/tests/test_job_executor.py": {
+      "sha256": "e322155ce5c42c639430ea5d05e367f02f4132178941941d41f7075b67ba2d64",
+      "bytes": 4478
+    },
+    "cryosparc_agent/tests/test_job_result.py": {
+      "sha256": "b501632ff9821adabbb95a4369f428983885e54757e9e42cc6573843d36204d1",
+      "bytes": 6747
+    },
+    "cryosparc_agent/tests/test_kb_escalation.py": {
+      "sha256": "f14a0d74dde67cd6dc311bf253961fdaba2cace230f15278c51f6d3a5b762369",
+      "bytes": 1908
+    },
+    "cryosparc_agent/tests/test_kb_integration.py": {
+      "sha256": "3f5a1a822f6b7faf2dd43f4a3aa1d55740dff3fd6215a6058013ef6f3eccf576",
+      "bytes": 5586
+    },
+    "cryosparc_agent/tests/test_model_direct_runner.py": {
+      "sha256": "6ff67c0e69267b7c0dc13d9eab1f4d042facc8cca48dfa6ebcf41b131d25e838",
+      "bytes": 12366
+    },
+    "cryosparc_agent/tests/test_model_input_builder.py": {
+      "sha256": "4c58fd30d88b19e1288d64ae53c677f39f97d88c092536a089bd75b33d4cba8b",
+      "bytes": 9758
+    },
+    "cryosparc_agent/tests/test_movie_metadata.py": {
+      "sha256": "7da6f33bcf1fcc6a9af899f5ae990fc85e77bf7b19f71e52fe36ee9baa3a0074",
+      "bytes": 2673
+    },
+    "cryosparc_agent/tests/test_particle_count_sampling.py": {
+      "sha256": "b06a64dd50403055a0e62b423df107f47e9c397ba7330bf71b3e86c026e06fa6",
+      "bytes": 731
+    },
+    "cryosparc_agent/tests/test_picker_blob_recovery.py": {
+      "sha256": "53ccc6ad5dc3960658a13541e286ffda3cd9f65f1de6bb6efb8ad9957c3ae3f0",
+      "bytes": 5123
+    },
+    "cryosparc_agent/tests/test_picker_gate_repeat.py": {
+      "sha256": "00a5e169d6817e95e1784b9addb9fa26041fcef670f38f6f1426e86dfd04c8f6",
+      "bytes": 2371
+    },
+    "cryosparc_agent/tests/test_pilot_3d_diagnostic.py": {
+      "sha256": "e7bcbb11eaa4d3de45e54aeac454ee099eb383341d0761439115a0ef9b9756f1",
+      "bytes": 2084
+    },
+    "cryosparc_agent/tests/test_pilot_continuation.py": {
+      "sha256": "bde6a046cf522b1c20b77b11ef50a313b307382c19f2378259385c147ce533a3",
+      "bytes": 3501
+    },
+    "cryosparc_agent/tests/test_pilot_inspect_comparison.py": {
+      "sha256": "4585bc78d178a8756c75fb837a6d462f15da6144c3bfd8adbc59003bee2de99e",
+      "bytes": 5596
+    },
+    "cryosparc_agent/tests/test_pilot_objective_gate.py": {
+      "sha256": "59e8a3ed4c0936e5de30d2cbb47a5154c3df5e140f0758f404b2dbd9fdb9fd3f",
+      "bytes": 3262
+    },
+    "cryosparc_agent/tests/test_pilot_promotion.py": {
+      "sha256": "81545454fd71cdb86ae58a200abe57d41e7a07ad33fb02ffaea53a6baf22e4f2",
+      "bytes": 5713
+    },
+    "cryosparc_agent/tests/test_pilot_reclassification_experiment.py": {
+      "sha256": "a202d0cba4df6193013410689e40dcfeeffb52d577e739c80074afb6098a3079",
+      "bytes": 4449
+    },
+    "cryosparc_agent/tests/test_pilot_reclassification_v2.py": {
+      "sha256": "e5ad349cd7cfd4b071e0753b81d97f88284672e08439323000998b0f39675215",
+      "bytes": 6201
+    },
+    "cryosparc_agent/tests/test_pilot_top_view_rescue.py": {
+      "sha256": "a3758635abbb39d45a8916ed3b5848318c5908e007035daa3ca7e3a8b0484060",
+      "bytes": 872
+    },
+    "cryosparc_agent/tests/test_planner_observation_compat.py": {
+      "sha256": "97d44fa2ec72138ee54d481dfde5d7b675475a90cc54322637e5db630bcc0904",
+      "bytes": 8273
+    },
+    "cryosparc_agent/tests/test_prepare_visual_rl_batch.py": {
+      "sha256": "00a491cde78887c43481569147b2a5f689038ef2e5ff68d2bc3deda62d74b18e",
+      "bytes": 2471
+    },
+    "cryosparc_agent/tests/test_prompt_context.py": {
+      "sha256": "340e00fab5c99118aac4b2a429cad6dc1bab775898c03a7d10278c7ec530c0ac",
+      "bytes": 3737
+    },
+    "cryosparc_agent/tests/test_proshade_adapter.py": {
+      "sha256": "4043a913e585792056ffd251ccd8fcdbb8c21642276f3d9c9b8a8582522faf94",
+      "bytes": 4720
+    },
+    "cryosparc_agent/tests/test_quality_policy.py": {
+      "sha256": "6e7dcb7c82bb3b37d1e4c7c8f029997a21d0588be3d8a786c7e7ffbd5f35b1a1",
+      "bytes": 1677
+    },
+    "cryosparc_agent/tests/test_reconstruction_planner_pilot.py": {
+      "sha256": "05e585cf5c620345231fedbc382036515586866e8a90825d53476c1a936d7b43",
+      "bytes": 4651
+    },
+    "cryosparc_agent/tests/test_reference_projection_metrics.py": {
+      "sha256": "5c070c1b64a509f395a283fcf201cdfb9f8a51f7bcd1bfd3801cb289d766baea",
+      "bytes": 2575
+    },
+    "cryosparc_agent/tests/test_refinement_optimization.py": {
+      "sha256": "d9a572c5f7b99f2f4ead37e0f00eaa9f18906e34a1d6e0c39d87cc0388de08ec",
+      "bytes": 8832
+    },
+    "cryosparc_agent/tests/test_reviewed_stage_guidance.py": {
+      "sha256": "c6908ceb267440da6a988f3e1435bcf2a076d4f6c86992eebc27e4658bbb86d0",
+      "bytes": 16676
+    },
+    "cryosparc_agent/tests/test_selection_safety.py": {
+      "sha256": "f125642a4a7bb95b604065dffa367d8c62a02fb7ffcd5df0e4cceb6de9997f17",
+      "bytes": 5288
+    },
+    "cryosparc_agent/tests/test_sequential_picker_rollout.py": {
+      "sha256": "46ef9cfcc265b47c48f4bd9707d377052262dc229f1847fd513bd343531c0d86",
+      "bytes": 20975
+    },
+    "cryosparc_agent/tests/test_sequential_picker_v4.py": {
+      "sha256": "ccf2153f063a4f2d4d5a8efac2416797cc4faa694f2f93262acca25244af156a",
+      "bytes": 7433
+    },
+    "cryosparc_agent/tests/test_stage_guidance_current_integration.py": {
+      "sha256": "61013ccfac38fa1f79ca618fee55d4d125bcce685709c491b657cac736bdf7aa",
+      "bytes": 5212
+    },
+    "cryosparc_agent/tests/test_symmetry_policy.py": {
+      "sha256": "2befbce47784c1cd6352a823b5f9cb7003ea2958420717e7adf2624913b004d1",
+      "bytes": 9206
+    },
+    "cryosparc_agent/tests/test_top_particle_trace.py": {
+      "sha256": "4dc882bc294f683caca1591c9c13a0299fe75594cb324335e55860625549289b",
+      "bytes": 2072
+    },
+    "cryosparc_agent/tests/test_two_tier_picker.py": {
+      "sha256": "12293a99ab94cfe387d04eaf9b92003393b3e7e63ea9f28110a6d79061109daa",
+      "bytes": 7108
+    },
+    "cryosparc_agent/tests/test_unattended.py": {
+      "sha256": "4ed3b53a71f9c02e9f522f037b787512c735249f732e02a26f37e4f614bb4037",
+      "bytes": 5040
+    },
+    "cryosparc_agent/tests/test_unknown_symmetry.py": {
+      "sha256": "83f881ad07e0f5c08cb732477ee9b0555d7fe3155476cb320a235b4212ffac6b",
+      "bytes": 3644
+    },
+    "cryosparc_agent/tests/test_upstream_evidence.py": {
+      "sha256": "6951c2836c53844d80ae22fa1c664ad80b8f2c3ffb58a303219bd49a37b340ea",
+      "bytes": 5825
+    },
+    "cryosparc_agent/tests/test_v2_decision_adapter.py": {
+      "sha256": "5b6ada36605f78febc856fc7ee4557d1f15448d9c4cb51a103e5438247017ccc",
+      "bytes": 9014
+    },
+    "cryosparc_agent/tests/test_vision_cache.py": {
+      "sha256": "264591efb8c25aa4608068e24cb31f05b64ff2c5cd93c9272dbffff8eb60db9c",
+      "bytes": 878
+    },
+    "cryosparc_agent/tests/test_visual_context_fallback.py": {
+      "sha256": "0751868e26b06d1fb273c49ae18cdacb790c8b98714fae7f087b1020e7435688",
+      "bytes": 4842
+    },
+    "cryosparc_agent/tests/test_visual_evidence_helpers.py": {
+      "sha256": "c63cf6a97ba772c8bc430137fc632ae289c4639736b00d586a0fc8ea2afc3107",
+      "bytes": 18606
+    },
+    "cryosparc_agent/tests/test_visual_rl_collection.py": {
+      "sha256": "b87cc7df25546214c68b9c955b8042b1b8a548895f462c61b1ed0dc6affbe140",
+      "bytes": 32362
+    },
+    "cryosparc_agent/tests/test_visual_sft_decision_adapter.py": {
+      "sha256": "3be4e3833033126c3bc17156a36a66157725fceec5fdc01f90e296135c4b614d",
+      "bytes": 7305
+    },
+    "cryosparc_agent/tests/test_volume_scale.py": {
+      "sha256": "3f1747972edb87b61cdcc7764fd61ea870e372ea2248d28e325e773463ffdd1c",
+      "bytes": 619
+    },
+    "cryosparc_agent/tests/test_workflow_completion.py": {
+      "sha256": "885a895e9baa59d17af1683e3aa5c152e11434a0ab1d41e0e7122b9acf1ecec9",
+      "bytes": 4425
+    },
+    "cryosparc_agent/tests/test_workflow_policy.py": {
+      "sha256": "75cae057894220bdfd074285a11bdbce670d0b3cb82200ae97d7dbbfc6a141fa",
+      "bytes": 3364
+    },
+    "cryosparc_agent/transport_errors.py": {
+      "sha256": "7a10be320cee9e8a7837c4d53e42e6c7215f10bd39a138dba2aeadbecababe67",
+      "bytes": 658
+    },
+    "cryosparc_agent/two_tier_picker.py": {
+      "sha256": "3c7f8117fa769dff6d932813584ed6e8657fd0484e16da42b120deaa00773a89",
+      "bytes": 11850
+    },
+    "cryosparc_agent/unattended.py": {
+      "sha256": "34c15889eb9901be62f964a37cf76bdf6be881aa5a195c6126ae4c4a392b65aa",
+      "bytes": 8435
+    },
+    "cryosparc_agent/upstream_evidence.py": {
+      "sha256": "4bde7cc0b9849d85f58c73c893cb323a5a25d986c4e2383b9a4bf288fe3c1c6b",
+      "bytes": 13271
+    },
+    "cryosparc_agent/v2_decision_adapter.py": {
+      "sha256": "9e40d59b8fee150399e31e8425501527d676ac9300f737ad3507230825d28489",
+      "bytes": 16649
+    },
+    "cryosparc_agent/vision_inputs.py": {
+      "sha256": "8dce805c80b0bfddaa8a522413dde8c434d8e150647711dc16606eda24789386",
+      "bytes": 52758
+    },
+    "cryosparc_agent/visual_decision_contract.py": {
+      "sha256": "522cd9a6266a29cf1357f32ede8199fb19a4839b3fe2fa1aeb62e4547190e2c4",
+      "bytes": 13327
+    },
+    "cryosparc_agent/visual_rl_collection.py": {
+      "sha256": "20cdc70e7c40a5aa960e5e0c34a224418c8ae6874aa9ece3f36522ad676a8277",
+      "bytes": 110992
+    },
+    "cryosparc_agent/volume_scale.py": {
+      "sha256": "70d6f213857bfc98a913f25f3e7113307b4121ec80d6e6c67d7f124e4e7995c8",
+      "bytes": 4330
+    },
+    "cryosparc_agent/workflow_completion.py": {
+      "sha256": "d6dacac01555c427c44df018e5c5e41e5594c54a566047347237331f7dbf2bea",
+      "bytes": 6244
+    },
+    "cryosparc_agent/workflow_policy.py": {
+      "sha256": "cee51d0bd1821b9bd0c6bd8f6b09fb6d16c95129435966019110d026472cc3cc",
+      "bytes": 13361
+    },
+    "cryosparc_agent/workflow_state.py": {
+      "sha256": "8801ff977391d95a9caea40b2302f7d1f24bd617703ab272941516df9454e1d2",
+      "bytes": 13339
+    },
+    "cryosparc_result_agent/scripts/submit_cryonet_mode22.py": {
+      "sha256": "7e036d9e2838eeb6372b827db7a92f5fd66599e5b51e3b2a7602118d0bf25371",
+      "bytes": 7738
+    },
+    "scripts/cryolo_size_probe.py": {
+      "sha256": "639571e2427442f6a4803bb717dceff8987e4c597e9b0d3382845d32b5cd469e",
+      "bytes": 16458
+    },
+    "webapp/__init__.py": {
+      "sha256": "55096f00b69af4661e011770fda08d7326734696b79eb5f9ee160cf2bddc997b",
+      "bytes": 73
+    },
+    "webapp/activity.py": {
+      "sha256": "fb8dd6139009a3a69c65553cb4738bacffdc6bf1529a8c309ab5e82e4e699725",
+      "bytes": 10005
+    },
+    "webapp/benchmark.py": {
+      "sha256": "26ea83f9c1316bdc453e5bf33c02b5a3a7daebf4242f92e160cb36009df5e808",
+      "bytes": 5986
+    },
+    "webapp/build_showcase_assets.py": {
+      "sha256": "b7d80b4d7af89a2f3902bdb45fd017a3a56e47c1cf959dbf59cec2f2922c63e4",
+      "bytes": 4151
+    },
+    "webapp/core.py": {
+      "sha256": "1a13e4aad5aa6feeeaae1a4a31bd01a11f3a52ad067b72a34fcf792ad035a563",
+      "bytes": 17508
+    },
+    "webapp/cryolo_probe.py": {
+      "sha256": "27b1d915adb966152ebe33d41e531a96d96ccbcea0989c4de53b07f720d1405a",
+      "bytes": 3863
+    },
+    "webapp/cryonet_worker.py": {
+      "sha256": "a3122c5be43a873e436094b56833efbb75dfb5cb54fc085d98a2b30af45ed5d7",
+      "bytes": 1330
+    },
+    "webapp/dashboard.py": {
+      "sha256": "bd70ecee02f5b55e35ea854973b78a6bf3035d15b4a64c9e727b488d98a0a02c",
+      "bytes": 2886
+    },
+    "webapp/gpu_routing.py": {
+      "sha256": "0c026b9f75ffece264249e850c12fcf9f80848ed6d6933113a1ab0054cdcc9d9",
+      "bytes": 4038
+    },
+    "webapp/lifecycle.py": {
+      "sha256": "1d1b1dc2a2c2400ead92ec862f42dca728868e3fc1dfde247a5347eb578749b7",
+      "bytes": 4083
+    },
+    "webapp/manage.py": {
+      "sha256": "66fa3fa780778988a468e7df987a49ce4fc5635e45fe5104da24149be4fc9ac8",
+      "bytes": 4856
+    },
+    "webapp/pilot_approval.py": {
+      "sha256": "6f8c2af68b0a6e2133ff49375f0a1d6e01af0abc9ea2cc9b84de178b15176cea",
+      "bytes": 7261
+    },
+    "webapp/pilot_pipeline.py": {
+      "sha256": "ceb9159345d16811601464d4bd7d0f3eeb4e746e4fd8ee6b66ca45f2ca97bf92",
+      "bytes": 13289
+    },
+    "webapp/progress_compat.py": {
+      "sha256": "037301919e53c8150858d9c7f778bba37d27271ca01c89028bc9addeed57844e",
+      "bytes": 2284
+    },
+    "webapp/proxy.py": {
+      "sha256": "80ddbccb3320e405e24fd2350fcb25c4bf6c1d2ca3ba6c02e9ae1cc8a3d77828",
+      "bytes": 7575
+    },
+    "webapp/render_showcase_assets.py": {
+      "sha256": "692a118f5d25a446517e472da183eab87d50e228e3cc1542a650c4bebf4deca7",
+      "bytes": 7727
+    },
+    "webapp/resume.py": {
+      "sha256": "6577ae8813081789be9988ff5654979db8b1cc27104e930dc625960f8713ede4",
+      "bytes": 1907
+    },
+    "webapp/server.py": {
+      "sha256": "c7bbf9ac86f44f78dd220740f66f7c93f5497ce3bc54aab98950669d06e337a7",
+      "bytes": 12930
+    },
+    "webapp/static/app.js": {
+      "sha256": "affa32e26146183dd07a761a07680bc55001dc439895ccc701084dc048097b3d",
+      "bytes": 32326
+    },
+    "webapp/static/index.html": {
+      "sha256": "c08825483d3bdbaf8451f313961f4bd2cf972ed96eddc7ace0a8364caca12f3d",
+      "bytes": 12892
+    },
+    "webapp/static/showcase/10012-curves.json": {
+      "sha256": "621f55f20563cd50b0764eb7216ebe08a80f2f16e27b637b3069a06f65358e3d",
+      "bytes": 24223
+    },
+    "webapp/static/showcase/10012-fsc.png": {
+      "sha256": "6d91be7614eccc657d517ded1c34aa834df3f53a46a17a1515e3a04a17dc9c2a",
+      "bytes": 77701
+    },
+    "webapp/static/showcase/10012-shape.png": {
+      "sha256": "a590a0bd919ebab6fd1bb327df35e9e1ddde4c9a3e7128e5a78adb28af997e71",
+      "bytes": 491293
+    },
+    "webapp/static/showcase/10025-curves.json": {
+      "sha256": "54f6dc3537bf505eba630090e6e5b14ffa566d9402444f644a50bf2436568719",
+      "bytes": 23901
+    },
+    "webapp/static/showcase/10025-fsc.png": {
+      "sha256": "b797645669b91a60aae9c45c391dfddf0d61bcd27a6f4fc7ebc3eeb77034123c",
+      "bytes": 82288
+    },
+    "webapp/static/showcase/10025-shape.png": {
+      "sha256": "94ab7d2471bea9f024072558cb34c52404a6f675b170da573cc597246394ac45",
+      "bytes": 511630
+    },
+    "webapp/static/showcase/10208-curves.json": {
+      "sha256": "612d942d1c4c7cd8a489eb7bd97326a4a13d252a44e365fe2c80543750c56a5e",
+      "bytes": 24130
+    },
+    "webapp/static/showcase/10208-fsc.png": {
+      "sha256": "7497e45ac23f897e2d5a09d6f9f33d3a7042699fda3c1571255a37d8dd87ad7d",
+      "bytes": 80035
+    },
+    "webapp/static/showcase/10208-shape.png": {
+      "sha256": "f3d76be819f8a9b869c90b69d2e3bc8e097189395d94f0a140f5cca96fa84276",
+      "bytes": 544086
+    },
+    "webapp/static/showcase/11280-curves.json": {
+      "sha256": "8a0d84c577cdc7e7c0e01ad3a8f9a22ade566ebb5ba0056ce2a2cd5732e91ebd",
+      "bytes": 12977
+    },
+    "webapp/static/showcase/11280-fsc.png": {
+      "sha256": "ee21d06fe3793cc82f8cbb06bdad37625523edca01a96b60a4bceb7b25ee46d7",
+      "bytes": 76171
+    },
+    "webapp/static/showcase/11280-shape.png": {
+      "sha256": "fbf523649f618dfc0627ccd968b0307dd93cc39df41d2e3151527ebd9b3c18fa",
+      "bytes": 556876
+    },
+    "webapp/static/style.css": {
+      "sha256": "af7af48f055f459d91f8e79788dabfe192961c8d68e1344100346e15b546425f",
+      "bytes": 15315
+    },
+    "webapp/supervisor.py": {
+      "sha256": "2c7613b85d94e757578985c55f26a73d82fae3dd093e5d9ecc0a190deafaa0be",
+      "bytes": 17271
+    },
+    "webapp/tests/native_render_checks.py": {
+      "sha256": "587592a7aab6eb8b51ffe69c4afd2fb046964f8dbdb6cae9611935c403579a77",
+      "bytes": 2370
+    },
+    "webapp/tests/test_activity.py": {
+      "sha256": "d830b8036d376aee43cc736976973b6440b804ecd71978ac3674a41e8c3b6acd",
+      "bytes": 2323
+    },
+    "webapp/tests/test_approved_phase_budget.py": {
+      "sha256": "4702bcb1f53025a7aa577874600dd108ee7364aa2655fad7a2c960c40ff8353d",
+      "bytes": 1193
+    },
+    "webapp/tests/test_benchmark.py": {
+      "sha256": "6b5d8a63553ea72028b3b5884cd362ea3e73b34ba79eea8fff8df469229c7e6f",
+      "bytes": 4577
+    },
+    "webapp/tests/test_compute_api4_bypass.py": {
+      "sha256": "d27e3ee25b4a25e211f2ca00cda1212674c304a22c2fd80393ba482034d553fe",
+      "bytes": 1622
+    },
+    "webapp/tests/test_controller_command.py": {
+      "sha256": "0628e039d4257be8e39fa2ad106a73de0065d12bcf0d852d4fb3e6f3262282c8",
+      "bytes": 1337
+    },
+    "webapp/tests/test_controller_placement.py": {
+      "sha256": "424fd04ad64e1e1196773aaa652ef9b68d831d08e83fb54e55047b8f28feeb72",
+      "bytes": 1040
+    },
+    "webapp/tests/test_controller_routing.py": {
+      "sha256": "c103061645a1bb2956abccdf773aee9455a5c2a34bdc9f90285870824393df9a",
+      "bytes": 1849
+    },
+    "webapp/tests/test_dashboard.py": {
+      "sha256": "840f6071caac1f1ca111c224aa9fb8b19ab6196766c477229b54b26c9af1be2e",
+      "bytes": 2283
+    },
+    "webapp/tests/test_dynamic_gpu_allocation.py": {
+      "sha256": "44ee342dc33b98030fcadf9bdcd5703c7eb1c101ba29e1cfb6966b78c5b1ee8a",
+      "bytes": 5794
+    },
+    "webapp/tests/test_frontend_workflows.cjs": {
+      "sha256": "6646fdbb0f31152f1bfa6561cb048aa8d7d1dcc24d166a61bc4ba79a6904be85",
+      "bytes": 9115
+    },
+    "webapp/tests/test_gpu_routing.py": {
+      "sha256": "ad7eb2242d6a638d2d2fabf676e7fc816ba53c05a0fa7fd68192794502aae23e",
+      "bytes": 2385
+    },
+    "webapp/tests/test_inspector_switch.cjs": {
+      "sha256": "7d9ba3fbe6829ecfe73ad180919606d87bd7814096d53b9ca7448ceeff13dd66",
+      "bytes": 3400
+    },
+    "webapp/tests/test_lifecycle.py": {
+      "sha256": "c750b57785a36af742af707ea100eb21bbe194d36d504b7185fe64c6a50a3020",
+      "bytes": 4340
+    },
+    "webapp/tests/test_movie_gain.py": {
+      "sha256": "6834031a9201f70adf7e36843ab88b718278d03cbed3a34bcb003f12d8595437",
+      "bytes": 1974
+    },
+    "webapp/tests/test_operator_control.py": {
+      "sha256": "9bf807e8d8351f630240b86a3966759977fbee88a0e7e35d90b61f5304891b00",
+      "bytes": 2252
+    },
+    "webapp/tests/test_particle_input.py": {
+      "sha256": "7b3059dff9aef37fa0196f50fb9d2ce58fc6e7b687619bed7a56f10eca59bcdf",
+      "bytes": 9263
+    },
+    "webapp/tests/test_pilot_diversity_approval.py": {
+      "sha256": "24214d0e19e48fc438bd4f406ed161dce5c80b5fa7a7a3577dfa63e149c20074",
+      "bytes": 3950
+    },
+    "webapp/tests/test_pilot_kb_audit.py": {
+      "sha256": "6f3b764b2f137d8956372a975c24555d42da702d62d8a0c4233407f8052a3cd1",
+      "bytes": 1822
+    },
+    "webapp/tests/test_pilot_pipeline.py": {
+      "sha256": "2d4953939e105505e7c1cee9c3a774610c4a92cc91e6e6cf82cad3f08430de84",
+      "bytes": 9834
+    },
+    "webapp/tests/test_proxy_upstream.py": {
+      "sha256": "953e2c4f0ee332e1f339941e9af4b1d51346e8ef116e3270d14fd3abf483a78f",
+      "bytes": 8457
+    },
+    "webapp/tests/test_runtime_profile.py": {
+      "sha256": "b09c0b4243092f0994b465ed736afe4fde4ea1ff7b4aaa674f200722f0868cec",
+      "bytes": 2585
+    },
+    "webapp/tests/test_showcase.py": {
+      "sha256": "a8606eae465ac8a840e1dc2d7d32987687aa53e01fc0c0c4848eb69caff251d7",
+      "bytes": 2963
+    },
+    "webapp/tests/test_supervisor.py": {
+      "sha256": "cf72146524d9e65776646f8f5204632ee3f5b63250ec5d50e6b624ff1dadb7f0",
+      "bytes": 13161
+    },
+    "webapp/tests/test_usage.py": {
+      "sha256": "1c21ce04e5a0945cbf1b36cd2dda5e775e9a03adb19f588e7e67f74ea3418c22",
+      "bytes": 13452
+    },
+    "webapp/tests/test_webapp.py": {
+      "sha256": "0ee848c93a54167acf6f7ebcdcb2dc676e856d3fb8bcbadf87b0b015adf3ec4d",
+      "bytes": 10798
+    },
+    "webapp/usage.py": {
+      "sha256": "7dccf048d4139f377cb4d670687c33e61c07a71cd67894ba2c29cf6b08e99b92",
+      "bytes": 11808
+    },
+    "webapp/worker.py": {
+      "sha256": "f0c92ade190d8218a27889c91f9825f0a296ce7eeed3f7e3a39f097fde266ec6",
+      "bytes": 19760
+    }
+  }
+}
