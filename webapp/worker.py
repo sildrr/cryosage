@@ -8,7 +8,7 @@ import threading
 import time
 from pathlib import Path
 
-from webapp.core import DATA, PYTHON, REPO, api_models, job_path, now, particle_input_files, read_task, write
+from webapp.core import DATA, PYTHON, REPO, api_models, job_path, now, particle_input_files, particle_star_paths, read_task, write
 
 sys.path.insert(0, str(REPO / "cryosparc_agent"))
 
@@ -159,7 +159,14 @@ def import_spec(config, root):
             link = stacks / name
             if not link.is_symlink():
                 link.symlink_to(target)
-        params.update(particle_meta_path=config["particle_star_path"], particle_blob_path=str(stacks),
+        stars = particle_star_paths(config["particle_star_path"])
+        if len(stars) > 1:
+            from webapp.star_merge import merge_particle_stars
+            star_path = root / 'merged_particles.star'
+            merge_particle_stars(stars, star_path)
+        else:
+            star_path = stars[0]
+        params.update(particle_meta_path=str(star_path), particle_blob_path=str(stacks),
                       ignore_blob=False, output_constant_ctf=False)
         if config.get("ignore_particle_pose") is True:
             params["ignore_pose"] = True
@@ -243,8 +250,8 @@ def run(identifier):
         )
     if config["input_type"] == "particles":
         dataset["available_input_files"] = {"particle_blob_path": params["particle_blob_path"],
-                                             "particle_meta_path": config["particle_star_path"]}
-        dataset["particle_star_path"] = config["particle_star_path"]
+                                             "particle_meta_path": params["particle_meta_path"]}
+        dataset["particle_star_path"] = params["particle_meta_path"]
         dataset["input_path"] = config["input_path"]
     write(root / "dataset.json", dataset)
     if task.get("import_job"):

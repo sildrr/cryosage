@@ -95,6 +95,15 @@ async function main() {
     assert.equal(h.element('input-path').value, '/uploads/flat/*.mrcs');
     assert.equal(h.element('particle-star-path').value, '/uploads/flat/particles.star');
   }
+  h.element('files').files = ['first.star','second.star','stack.mrcs'].map(name => ({name,size:20}));
+  h.context.response = url => {
+    const filename = new URLSearchParams(url.split('?')[1]).get('filename');
+    return {group:'flat',file_path:'/uploads/flat/'+filename,input_path:'/uploads/flat/*'};
+  };
+  await h.element('files').onchange();
+  assert.equal(h.element('particle-star-path').value, '/uploads/flat/first.star, /uploads/flat/second.star');
+  assert.equal(h.element('input-path').value, '/uploads/flat/*.mrcs');
+
   h.element('input-path').value = '/original/stacks';
   h.element('particle-star-path').value = '/original/particles.star';
   h.context.response = () => ({group:'missing',input_path:'/uploads/missing/*'});

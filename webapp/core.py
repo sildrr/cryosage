@@ -1,14 +1,15 @@
 from __future__ import annotations
 
 import glob
+import csv
 import json
 import math
 import os
 import re
 import shlex
 import subprocess
-import uuid
 import sys
+import uuid
 from datetime import datetime, timezone
 from functools import lru_cache
 from pathlib import Path
@@ -94,13 +95,15 @@ def allowed_path(path):
 
 def particle_input_files(source, star):
     """Validate particle paths before expansion and every resolved stack target."""
-    for value in (source, star):
+    stars = particle_star_paths(star)
+    for value in (source, *stars):
         if not isinstance(value, str) or not value.startswith("/") or any(c in value for c in ("\x00", "\n", "\r")):
             raise ValueError("Particle inputs require absolute server paths")
-    if glob.has_magic(star) or "$" in star or Path(star).suffix.lower() != ".star":
-        raise ValueError("particle_star_path must name one STAR file (no glob)")
-    if not allowed_path(star) or not Path(star).is_file() or not os.access(star, os.R_OK):
-        raise ValueError("STAR file is unreadable or outside configured input roots")
+    for star in stars:
+        if glob.has_magic(star) or "$" in star or Path(star).suffix.lower() != ".star":
+            raise ValueError("particle_star_path must name STAR files (no glob)")
+        if not allowed_path(star) or not Path(star).is_file() or not os.access(star, os.R_OK):
+            raise ValueError("STAR file is unreadable or outside configured input roots")
     prefix = re.split(r"[?*\[]", source, maxsplit=1)[0]
     check = prefix if prefix.endswith("/") or not glob.has_magic(source) else str(Path(prefix).parent)
     if not allowed_path(check):
@@ -115,8 +118,24 @@ def particle_input_files(source, star):
         raise ValueError("Particle stacks must be MRC or MRCS files")
     if len({Path(f).name for f in files}) != len(files):
         raise ValueError("Particle stack basenames must be unique")
-    validate_particle_star(star, files)
+    for star in stars:
+        validate_particle_star(star, files)
+    if len(stars) > 1:
+        from webapp.star_merge import merge_particle_stars
+        merge_particle_stars(stars, None)
     return files
+
+
+def particle_star_paths(value):
+    if not isinstance(value, str) or not value.strip() or any(c in value for c in ('\x00', '\n', '\r')):
+        raise ValueError('Provide one or more absolute STAR paths')
+    try:
+        paths = [v.strip() for v in next(csv.reader([value], skipinitialspace=True))]
+    except (csv.Error, StopIteration) as exc:
+        raise ValueError('Invalid STAR path list') from exc
+    if any(not p or not p.startswith('/') for p in paths) or len(set(paths)) != len(paths):
+        raise ValueError('STAR paths must be distinct absolute paths')
+    return paths
 
 
 def validate_particle_star(star, files):

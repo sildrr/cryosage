@@ -60,11 +60,10 @@ $('files').onchange=async()=>{
   if(!token){$('auth-dialog').showModal();return;}
   const files=[...$('files').files];if(!files.length)return;
   const particles=$('task-form').elements.input_type.value==='particles';
-  if(particles&&files.some(file=>! /\.(mrcs|star)$/i.test(file.name))){toast('Particle uploads support flat MRCS stacks and one corresponding STAR file. Use server paths for other stack layouts.');return;}
+  if(particles&&files.some(file=>! /\.(mrcs|star)$/i.test(file.name))){toast('Particle uploads support flat MRCS stacks and corresponding STAR files. Use server paths for other stack layouts.');return;}
   if(files.some(file=>/\.star$/i.test(file.name))&&!particles){toast('Select Particles mode before uploading STAR metadata.');return;}
-  if(files.filter(file=>/\.star$/i.test(file.name)).length>1){toast('Upload one STAR metadata file per workflow.');return;}
   uploading=true;$('submit-task').disabled=true;$('task-form').elements.input_type.disabled=true;
-  let group,uploadedPath='',uploadedStar='';
+  let group,uploadedPath='',uploadedStars=[];
   try{
     for(let i=0;i<files.length;i++){
       const file=files[i];
@@ -74,7 +73,7 @@ $('files').onchange=async()=>{
       const data=await api(`/api/uploads?${query}`,{method:'POST',body:file});group=data.group;
       if(/\.star$/i.test(file.name)){
         if(!data.file_path)throw new Error('The upload response did not include the STAR file_path. Enter its server path manually.');
-        uploadedStar=data.file_path;
+        uploadedStars.push(data.file_path);
       }else{
         if(!data.input_path)throw new Error('The upload response did not include a data path.');
         if(particles&&!data.file_path)throw new Error('The upload response did not include the MRCS file_path. Enter its server folder manually.');
@@ -83,7 +82,7 @@ $('files').onchange=async()=>{
     }
     // Do not replace an existing MRCS folder when uploading only STAR metadata.
     if(uploadedPath)$('input-path').value=uploadedPath;
-    if(uploadedStar)$('particle-star-path').value=uploadedStar;
+    if(uploadedStars.length)$('particle-star-path').value=uploadedStars.join(', ');
     $('upload-status').textContent=`${files.length} file(s) uploaded. Verify paths, input type, and acquisition parameters.`;
   }catch(err){
     toast(err.message);$('upload-status').textContent='Upload incomplete. Re-select the files or enter server paths; partial upload paths were not applied.';

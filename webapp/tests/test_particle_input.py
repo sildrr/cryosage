@@ -197,3 +197,36 @@ def test_mocked_worker_handoff(particles, monkeypatch):
     assert dataset["input_type"] == "particles" and dataset["total_exposure_dose_e_per_A2"] is None
     assert set(dataset["available_input_files"]) == {"particle_blob_path", "particle_meta_path"}
 
+
+
+def test_multiple_star_files_preserve_both_particle_tables(particles, tmp_path):
+    from webapp.star_merge import merge_particle_stars
+    first = Path(particles['particle_star_path'])
+    second = first.with_name('second.star')
+    first.write_text(star_text('1@one.mrcs'))
+    second.write_text(star_text('2@two.mrcs'))
+    particles['particle_star_path'] = f'{first}, {second}'
+    config = core.validate_request(particles)
+    kind, params = worker.import_spec(config, tmp_path)
+    merged = Path(params['particle_meta_path'])
+    assert kind == 'import_particles' and merged != first
+    text = merged.read_text()
+    assert '1@one.mrcs' in text and '2@two.mrcs' in text
+    assert merge_particle_stars([first, second], None) == [1, 1]
+
+
+def test_multiple_star_rejects_incompatible_optics_and_no_partial_output(particles, tmp_path):
+    from webapp.star_merge import merge_particle_stars
+    first = Path(particles['particle_star_path']); second = first.with_name('second.star')
+    second.write_text(star_text('1@one.mrcs').replace('1 300', '1 200'))
+    destination = tmp_path / 'combined.star'
+    with pytest.raises(ValueError, match='different optics'):
+        merge_particle_stars([first, second], destination)
+    assert not destination.exists()
+
+
+def test_multiple_star_rejects_duplicate_paths(particles):
+    path = particles['particle_star_path']
+    particles['particle_star_path'] = f'{path}, {path}'
+    with pytest.raises(ValueError, match='distinct'):
+        core.validate_request(particles)
